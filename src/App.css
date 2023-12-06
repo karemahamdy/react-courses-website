@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,119 @@
   to {
     transform: rotate(360deg);
   }
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
+:root {
+  --main-background-color: #1f2641;
+  --secondary-background-color: #2e3267;
+  --main-padding-top: 50px;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Standard button */
+button.btn {
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  font-weight: 500;
+  background: #f75842;
+  color: white;
+}
+button.btn:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+/* end global roots  */
+/* start nav section */
+nav {
+  background: var(--secondary-background-color);
+  /* width: 100vw; */
+  height: 4rem;
+  /* position: fixed;
+  top: 0;
+  z-index: 11; */
+}
+.nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav-menu a {
+  font-size: 0.9rem;
+  color: white;
+}
+.container h4 {
+  color: white;
+}
+.nav-menu a:hover {
+  color: #00bf8e;
+}
+/* end nav section */
+/* start footer */
+footer {
+  background-color: var(--secondary-background-color);
+  color: white;
+  padding: 2rem;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 2;
+}
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  color: #00bf8e;
+}
+
+.footer_socials ul {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.footer_socials i {
+  padding: 10px 5px;
+  font-size: 25px;
+}
+.footer_socials i:hover {
+  color: #00bf8e;
+}
+.footer_copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid white;
+}
+/* end footer */
