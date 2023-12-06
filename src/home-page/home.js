@@ -1,6 +1,6 @@
 import Textbox  from "../component/text.js";
 import { Category } from "./category";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Course } from "./course.js";
 export default function Home(){
     return(
 <>
@@ -15,6 +15,7 @@ export default function Home(){
     </div>
     </div>
   <Category/>
+  <Course/>
 </>
     );
 };
