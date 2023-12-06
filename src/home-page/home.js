@@ -1,6 +1,7 @@
 import Textbox  from "../component/text.js";
 import { Category } from "./category";
 import { Course } from "./course.js";
+import { Question } from "./question.js";
 export default function Home(){
     return(
 <>
@@ -16,6 +17,7 @@ export default function Home(){
     </div>
   <Category/>
   <Course/>
+  <Question/>
 </>
     );
 };
