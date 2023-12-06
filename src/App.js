@@ -1,13 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
+
 // index.js or index.tsx
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home-page/home.css';
 import Nav from"./component/nav";
 import Footer from "./component/footer"; 
 import Home from"./home-page/home";
-import { Category } from './home-page/category';
-// import Category from "./home-page/category";
+
 // function App() {
 //   return (
 //     // <div className="App">
@@ -38,6 +38,7 @@ export default function App() {
     <>
     <Nav/>
     <Home/>
+   
     <Footer/>
     </>
   );
